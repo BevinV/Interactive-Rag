@@ -44,9 +44,9 @@ docker compose up
 
 ```
 interactive-rag-system/
-├── backend/      # FastAPI + processing
-├── frontend/     # React UI
-├── storage/      # Docs & vector stores
+├── backend/     
+├── frontend/   
+├── storage/     
 ├── docker-compose.yml
 └── README.md
 ```
