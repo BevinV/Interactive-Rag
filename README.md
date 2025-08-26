@@ -63,9 +63,3 @@ Chunking: `fixed_size`, `recursive`, `sliding_window`
 
 
 ---
-
-## 📄 License
-
-MIT License
-
----
