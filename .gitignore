@@ -55,9 +55,6 @@ yarn-error.log
 build/
 dist/
 
-# Storage (persistent but ignore for git)
-storage/
-
 # Misc
 *.swp
 *.bak
