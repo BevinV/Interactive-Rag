@@ -1,24 +1,71 @@
-# Interactive RAG System
+# 📘 Interactive RAG System
 
-A Retrieval-Augmented Generation system that allows users to upload documents, query them using semantic search, and interactive chunk editing and management.
+A modern **Retrieval-Augmented Generation (RAG)** platform designed for one thing above all: **easy editing of vector store chunks**. Upload PDFs, search semantically, and refine knowledge instantly through a clean web UI.
 
-## Features
+---
 
-- 📄 PDF document ingestion with multiple chunking strategies
-- 🔍 Semantic search with various embedding models
-- 🧠 Vector store management with upload/download capabilities
-- ✏️ Interactive chunk editing and management
-- 📊 Results visualization with relevance scores
+## ✨ Key Features
 
-## Installation
+* **Interactive Editing (Core)**: Search, edit, and update document chunks in real time.
+* **Document Ingestion**: Upload PDFs with multiple chunking strategies.
+* **Semantic Search**: Query using advanced embedding models.
+* **Vector Store Management**: Create, import, and export vector stores.
+* **Modern UI + API**: React frontend, FastAPI backend, Docker support.
 
-### Prerequisites
+---
 
-- Python 3.8+
-- Node.js 14+
-- pip package manager
-- npm or yarn
+## 🚀 Quick Start
 
-### To run
+### With Docker 
 
-- docker-compose up
+```bash
+git clone <your-repo-url>
+cd interactive-rag-system
+docker compose up
+```
+
+### Manual Install (Without Docker)(Recommended)
+
+* **Backend**: `cd backend && pip install -r requirements.txt && uvicorn main:app`
+* **Frontend**: `cd frontend && npm install && npm start`
+
+---
+
+## 🎯 Usage
+
+1. **Upload PDFs** → Configure chunking + embedding.
+2. **Query Documents** → Semantic search with adjustable results.
+3. **Edit Chunks (Core)** → Click *Edit*, update text, save instantly.
+4. **Manage Stores** → Import/export vector stores easily.
+
+---
+
+## 📂 Structure
+
+```
+interactive-rag-system/
+├── backend/      # FastAPI + processing
+├── frontend/     # React UI
+├── storage/      # Docs & vector stores
+├── docker-compose.yml
+└── README.md
+```
+
+---
+
+## ⚙️ Config
+
+* `STORAGE_DIR` (backend)
+* `REACT_APP_API_URL` (frontend)
+
+Models: `all-MiniLM-L6-v2` (default), `all-mpnet-base-v2`, `multi-qa-MiniLM-L6-cos-v1`
+Chunking: `fixed_size`, `recursive`, `sliding_window`
+
+
+---
+
+## 📄 License
+
+MIT License
+
+---
