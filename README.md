@@ -1,4 +1,4 @@
-# 📘 Interactive RAG System
+# 📘 Interact RAG
 
 A modern **Retrieval-Augmented Generation (RAG)** platform designed for one thing above all: **easy editing of vector store chunks**. Upload PDFs, search semantically, and refine knowledge instantly through a clean web UI.
 
@@ -19,8 +19,8 @@ A modern **Retrieval-Augmented Generation (RAG)** platform designed for one thin
 ### With Docker 
 
 ```bash
-git clone <your-repo-url>
-cd interactive-rag-system
+git clone https://github.com/BevinV/Interact-Rag.git
+cd Interact-RAG
 docker compose up
 ```
 
