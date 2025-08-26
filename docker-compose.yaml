@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  backend:
+    image: python:3.9-slim
+    working_dir: /app
+    volumes:
+      - ./backend:/app
+      - ./storage:/app/storage
+    ports:
+      - "8000:8000"
+    command: >
+      sh -c "pip install -r requirements.txt &&
+             mkdir -p storage/docs storage/vector_stores &&
+             uvicorn main:app --host 0.0.0.0 --port 8000"
+    environment:
+      - STORAGE_DIR=/app/storage
+
+  frontend:
+    image: node:18-alpine
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    command: >
+      sh -c "npm install &&
+             npm start"
+    depends_on:
+      - backend
+    environment:
+      - REACT_APP_API_URL=http://localhost:8000

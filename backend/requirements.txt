@@ -1,0 +1,9 @@
+fastapi==0.104.1
+uvicorn==0.24.0
+python-multipart==0.0.6
+sentence-transformers==2.2.2
+PyPDF2==3.0.1
+faiss-cpu==1.7.4
+python-jose==3.3.0
+passlib==1.7.4
+bcrypt==4.0.1
