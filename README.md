@@ -1,6 +1,6 @@
 # Interactive RAG System
 
-A powerful Retrieval-Augmented Generation system that allows users to upload documents, query them using semantic search, and interactive chunk editing and management.
+A Retrieval-Augmented Generation system that allows users to upload documents, query them using semantic search, and interactive chunk editing and management.
 
 ## Features
 
