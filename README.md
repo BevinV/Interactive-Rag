@@ -38,6 +38,8 @@ docker compose up
 3. **Edit Chunks (Core)** → Click *Edit*, update text, save instantly.
 4. **Manage Stores** → Import/export vector stores easily.
 
+⚠️ Note on Embedding Models: If you change the embedding model, go to Settings → Reset Index so that your vector store is rebuilt with the new embeddings.
+
 ---
 
 ## 📂 Structure
